@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevForce.io - BDP Governance Portal">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>DevForce.io - BDP Governance Portal</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/animate-custom.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://jira.devforce.io/s/f26ed85db1e8b5fb5d6442745d0a1945-T/en_US-qja41k/71013/a98daf6923b8f38b2e366a7816fbfe87/2.0.14/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=baaaa0db"></script>
+
+    <script type="text/javascript" src="https://jira.devforce.io/s/f26ed85db1e8b5fb5d6442745d0a1945-T/en_US-qja41k/71013/a98daf6923b8f38b2e366a7816fbfe87/2.0.14/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=8701c19f"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+                'baaaa0db': {
+                    "triggerFunction": function (showCollectorDialog) {
+                        //Requires that jQuery is available!
+                        jQuery("#request-account").click(function (e) {
+                            e.preventDefault();
+                            showCollectorDialog();
+                        });
+                    }
+                },
+                '8701c19f': {
+                    "triggerFunction": function (showCollectorDialog) {
+                        //Requires that jQuery is available!
+                        jQuery("#request-disc").click(function (e) {
+                            e.preventDefault();
+                            showCollectorDialog();
+                        });
+                    }
+                }
+            });
+        });</script>
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" class="bdp-landing">
+
+
+<div id="navbar-main">
+    <!-- Fixed navbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#home">Logo Here</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="bdp-landing" name="bdp-landing">
+    <div class="container">
+        <h1 class="white">Welcome to the DISA ID6 Governance Environment for the management and integration of data analytics.</h1>
+        <h1 class="white">Log in below to access the community tools that will allow you to rapidly develop analytics and new components for the Big Data Platform (BDP) baseline. Save time and money by collaborating with other developers, reusing and sharing analytics, and accessing the vast community code base.</h1>
+
+        <div class="mar-t40 clearfix">
+            <div class="col-md-3">
+                <i class="icon bdp-gp-collect-icon white" aria-hidden="true"></i>
+                <h2 class="white">Collect</h2>
+            </div>
+
+            <div class="col-md-3">
+                <i class="icon bdp-gp-analyze-icon white" aria-hidden="true"></i>
+                <h2 class="white">Analyze</h2>
+            </div>
+
+            <div class="col-md-3">
+                <i class="icon bdp-gp-visualize-icon white" aria-hidden="true"></i>
+                <h2 class="white">Visualize</h2>
+            </div>
+
+            <div class="col-md-3">
+                <i class="icon bdp-gp-share-icon white" aria-hidden="true"></i>
+                <h2 class="white">Share</h2>
+            </div>
+        </div>
+        <div class="centered mar-b20 mar-t30">
+            <a href="https://devforce.io" class="primary-btn">Sign In and Get Started</a>
+        </div>
+        <div class="centered mar-b100 mar-t30">
+            <div class="inline">
+                <button id="request-account" class="secondary-btn"><i class="icon-sm bdp-gp-account-icon" aria-hidden="true"></i> Request a Devforce Account</button>
+            </div>
+            <div class="inline">
+                <button id="request-disc" class="secondary-btn"><i class="icon-sm bdp-gp-disc-icon" aria-hidden="true"></i> Request a BDP Disc</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footerwrap" class="footer-fixed">
+    <div class="container">
+        <span class="font-sm">&copy; 2016 devforce.io</span>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/retina.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+</body>
+</html>
